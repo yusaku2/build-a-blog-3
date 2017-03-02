@@ -1,0 +1,20 @@
+{% extends "front.html" %}
+
+{% block content %}
+<form method="post">
+    <label>
+        <div><title>Home</title></div>
+        <input type="text" name="title" value="{{title}}">
+    </label>
+
+    <label>
+        <div class="error">{{error}}</div>
+
+        <div>New Post</div>
+
+        <textarea name="bloge">{{bloge}}</textarea>
+    </label>
+    <input type="submit">
+</form>
+
+{% endblock %}
